@@ -6,7 +6,6 @@ import {
   TextInput,
   TouchableOpacity,
 } from "react-native";
-import { Dimensions } from "react-native";
 
 export default function Login() {
   return (

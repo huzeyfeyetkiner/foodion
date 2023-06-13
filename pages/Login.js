@@ -12,7 +12,7 @@ import SIcon from "react-native-vector-icons/SimpleLineIcons";
 import EIcon from "react-native-vector-icons/Entypo";
 import FIcon from "react-native-vector-icons/FontAwesome5";
 
-export default function Login() {
+export default function Login({ navigation }) {
   const [moreToggle, setMoreToggle] = useState(false);
 
   if (moreToggle) {

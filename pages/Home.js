@@ -13,7 +13,12 @@ export default function Home({ navigation }) {
         Please sign up or login to be able to buy your next ticket
       </Text>
       <View style={styles.buttonsHome}>
-        <TouchableOpacity style={[styles.defButton, styles.sUpButton]}>
+        <TouchableOpacity
+          style={[styles.defButton, styles.sUpButton]}
+          onPress={() => {
+            navigation.navigate("Signup");
+          }}
+        >
           <Text style={{ color: "#F34900" }}>Signup</Text>
         </TouchableOpacity>
 

@@ -114,7 +114,12 @@ export default function Login({ navigation }) {
             </Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={[styles.defButton]}>
+          <TouchableOpacity
+            style={[styles.defButton]}
+            onPress={() => {
+              navigation.navigate("Main");
+            }}
+          >
             <Text style={{ color: "#000", fontWeight: 600 }}>
               Continue without login
             </Text>

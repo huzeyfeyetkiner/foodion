@@ -12,20 +12,23 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          options={{ title: "Home" }}
+          options={{ title: "Home", headerShown: false }}
           name="Home"
           component={Home}
         />
+
         <Stack.Screen
           options={{ title: "Login" }}
           name="Login"
           component={Login}
         />
+
         <Stack.Screen
           options={{ title: "Signup" }}
           name="Signup"
           component={Signup}
         />
+
         <Stack.Screen
           options={{ title: "Main" }}
           name="Main"

@@ -2,7 +2,7 @@
 
 ## How to run?
 
-In order to open the project on your phone first download the Expo Go app on your phone
+In order to open the project on your phone first download the Expo Go app to your phone
 
 After that stage you need to install expo package in your project directory with the code given below
 

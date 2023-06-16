@@ -18,15 +18,24 @@ export default function Home({ navigation }) {
     <View style={styles.mainContainer}>
       <View style={styles.header}>
         <Text style={[styles.headText]}>foodion</Text>
+
         <MIcon
           style={{ marginLeft: "auto" }}
           color={"#F34900"}
           size={18}
           name="line-scan"
+          onPress={() => {
+            navigation.navigate("Camera");
+          }}
         ></MIcon>
       </View>
 
-      <TouchableOpacity style={styles.title}>
+      <TouchableOpacity
+        style={styles.title}
+        onPress={() => {
+          navigation.navigate("Camera");
+        }}
+      >
         <Text style={styles.titleText}>Big Food day Only step..</Text>
 
         <Image

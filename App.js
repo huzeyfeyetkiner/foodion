@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Main from "./pages/Main";
+import Camera from "./pages/Camera";
 
 const Stack = createNativeStackNavigator();
 
@@ -33,6 +34,12 @@ export default function App() {
           options={{ title: "Main" }}
           name="Main"
           component={Main}
+        />
+
+        <Stack.Screen
+          options={{ title: "Camera" }}
+          name="Camera"
+          component={Camera}
         />
       </Stack.Navigator>
     </NavigationContainer>
